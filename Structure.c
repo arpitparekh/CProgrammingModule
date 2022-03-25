@@ -1,35 +1,44 @@
 #include<stdio.h>
 #include<string.h>
 
-struct Student{
-	
-		int x;
-		float f;
-		char name[20];
-}s;
+// strcuture
 
+// collection of datatype under single datatype name
+
+//struct College{
+//	
+//	char deptName[20];
+//};
+
+struct Student{   // u can't initialize values in structure
+	
+	int roll;
+	char name[20];
+	float height;
+//	struct College c;
+	
+	struct College{
+	
+	char deptName[20];
+
+	}c;
+	
+}s;
 
 main(){
 	
-//	struct Student s;
+//	Student s;
 	
-	s.x =12;
-	s.f = 34.45;
+	strcpy(s.c.deptName,"science");
+	s.roll = 34;
+	strcpy(s.name,"tops");
+	s.height = 45.56;
 	
-	char data[20];
+	printf("%d \n",s.roll);
+	printf("%s \n",s.name);
+	printf("%f \n",s.height);
+	printf("%s \n",s.c.deptName);
 	
 	
-	strcpy(s.name,"tops");   //  initialize string
-	
-	
-	printf("%d\n",s.x);
-	printf("%f\n",s.f);
-	printf("%s\n",s.name);
-	
-	// structure
-	
-	// group of datatype under a single data type name
-	
-	// u can not initialize variable inside structure
 	
 }

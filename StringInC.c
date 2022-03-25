@@ -1,97 +1,29 @@
 #include<stdio.h>
-#include<string.h>
 
 main(){
 	
 	// string
+	// "tops"
+	// squence of character
 	
-	// string is a group of character
-	// string is character array
+	char name[10] = "tops";
 	
-	// "tops" // "Hello"  //  " " 
+	char name1[10] = {'t','o','p','s'};
 	
-	// 't' , ''
-	
-//	char ch =' ';
-//	
-//	printf("%c",ch);
+//	printf("%s",name1);
 
-	int x =3;
+	printf("Enter String \n");
 	
-	char number = '3';
-	
-	printf("%c",number);
-	
-	char name[] = "tops321" ;
-	
-	char name2[]= {'t','o','p','s'};
-	
-	printf("%s \n",name);
-	printf("%s",name2);	
-	
-	///////////////////////////////////
-	
-	char data[50];
-	
-	printf("\nEnter Name \n");
+	char fname[20];
 
-	gets(data);
+char lname[20];
 	
-//	printf("%s",data);
-	puts(data);              // print string
-	
-	/////////////////////////////////////  string function  /////
-	
-	// strlen()
-	
-	printf("No Of Character is -> %d \n",strlen(data));
-	
-	///////////////////////////////////////////////////////////////////
-	
-	char data2[50];
-	
-	strcpy(data2,data);
-	
-	puts(data2);
-	
-	
-	///////////////////////////////////////////////////
-	
-	char address[20];
-//	address = "adajan";                        *
-//	address = {'a','d','a','a','n'};	
+//	scanf("%s",&fname);
 
-	strcpy(address,"adajan");
+	gets(fname);
 	
-	puts(address);
+//	printf("%s",fname);
 	
-	////////////////////////////////////////////////////////////////
-	
-	// strcat();  // concate
-	
-	strcat(data,address);
-	
-	puts(data);
-	
-	//////////////////////////////////////////////////////////
-	
-	
-	//  strcmp();  // 
-	
-	char d1[20];
-	char d2[20];
-	
-	gets(d1);
-	gets(d2);
-	
-	printf("%d",strcmp(d1,d2));
-	
-	
-	
-	
-	
-	
-	
-	
+	puts(fname);
 	
 }
